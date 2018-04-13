@@ -8,13 +8,11 @@ If you are looking for support or troubleshooting assistance, please visit our [
 
 ## Getting Started
 
-To begin, install the Ruby Version Manager (RVM):
+To begin, if you do not have Ruby, Git, MySQL, and Postgres, we suggest
+using this [site](https://gorails.com/setup) to install the software.
+Pick the appropriate operating system and follow the instructions.
 
-```bash
-$ curl -L https://get.rvm.io | bash -s stable --autolibs=3 --ruby=2.4.3
-```
-
-After installing the package, clone this repo:
+After installing the above software, clone this repo:
 
 ```bash
 $ git clone git@github.com:OWASP/railsgoat.git
@@ -136,18 +134,10 @@ Alternatively, you can run MailCatcher in the foreground by running `mailcatcher
 
 ## Contributing
 
-As changes are made to the application, the Capybara RSpecs can be used to verify that the vulnerabilities in the application are still intact. To use them in this way, and have them change to `pending` instead of `fail`, set the `RAILSGOAT_MAINTAINER` environment variable.
+Please see our [contribution document](./CONTRIBUTING.md) to learn more. Additionally, note that as changes are made to the application, the Capybara RSpecs can be used to verify that the vulnerabilities in the application are still intact. To use them in this way, and have them change to `pending` instead of `fail`, set the `RAILSGOAT_MAINTAINER` environment variable.
 
 Conversion to the OWASP Top Ten 2013 completed in November, 2013.
 
 # License
 
-The MIT License (MIT)
-
-Copyright (c) 2013-2014 The Open Web Application Security Project
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+[The MIT License (MIT)](./LICENSE.md)
